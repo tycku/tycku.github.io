@@ -18,23 +18,9 @@ body{
     margin-top: 10px;
 }
 
-.head{
-    background-image: url('japan_photo1.jpg');
-    background-size: cover;
-    min-width: 964px;
-    min-height: 500px;
-    display: flex;
-    justify-content: center;
-}
-
-.second-img{
-    background-image: url('cat2.jpg');
-    background-size: cover;
-    min-width: 964px;
-    min-height: 500px;
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
+.responsive{
+    width: 100%;
+    height: auto;
 }
 
 .about-container{
