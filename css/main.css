@@ -1,0 +1,110 @@
+html, body{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    background-position: center top;
+    background-size: cover;
+    margin: 0;
+}
+
+.page-title{
+    text-align: center;
+    font-weight: lighter;
+    font-size: 70px;
+    margin-top: 10px;
+}
+
+.head{
+    background-image: url('japan_photo1.jpg');
+    background-size: cover;
+    min-width: 964px;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.second-img{
+    background-image: url('cat2.jpg');
+    background-size: cover;
+    min-width: 964px;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.about-container{
+    background-color: #fffadb;
+    min-width: 964px;
+    min-height: 400px;
+    padding: 50px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.empty{
+    background-color: #c0e5c4;
+    min-width: 964px;
+    min-height: 400px;
+    padding: 50px;
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+}
+
+.empty li{
+    font-size: 25px;
+    margin: 0 0 15px 0;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 0 0;
+}
+
+.skills-container div {
+  min-width: 660px;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+}
+
+.languages{
+    display: block;
+    background-color: #dbeeff;
+}
+
+.experience{
+    background-color: aliceblue
+}
+
+a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav{
+  background-color: #1c281c;
+}
+
+nav ul{
+  display: inline;
+    float: right;
+}
+
+nav li {
+  color: #ffffff;
+  display: inline;
+  margin: 0;
+  padding: 0 10px;
+}
+
+.languages li, .experience li{
+    font-size: 20px;
+}
