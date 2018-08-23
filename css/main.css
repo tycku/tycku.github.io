@@ -25,35 +25,42 @@ body{
 
 .about-container{
     background-color: #fffadb;
-    min-width: 964px;
+    width: 100%;
     min-height: 400px;
-    padding: 50px;
     text-align: center;
     margin-top: 10px;
 }
 
-.empty{
+.about-container h1{
+    padding-top: 30px;
+}
+
+.about-container p{
+    padding: 0 120px 30px 120px;
+}
+
+.random-container{
     background-color: #c0e5c4;
-    min-width: 964px;
+    width: 100%
     min-height: 400px;
     padding: 50px;
     text-align: center;
     margin: 10px 0px 10px 0px;
 }
 
-.empty li{
+.random-container li{
     font-size: 25px;
-    margin: 0 0 15px 0;
+    margin: 0 25px 15px 0;
 }
 
 .skills-container {
   display: flex;
   justify-content: center;
-  padding: 10px 0 0 0;
+  padding: 10px 0 10px 0;
 }
 
 .skills-container div {
-  min-width: 660px;
+  width: 100%;
   min-height: 400px;
   display: flex;
   justify-content: center;
