@@ -1,3 +1,10 @@
+@font-face{
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 200;
+  src: url('Raleway/Raleway-ExtraLight.ttf') format('truetype');
+}
+
 html, body{
   min-height: 100%;
   display: flex;
@@ -6,7 +13,7 @@ html, body{
 }
 
 body{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Raleway', sans-serif;
     background-position: center top;
     background-size: cover;
     margin: 0;
@@ -30,15 +37,13 @@ body{
     min-height: 400px;
     text-align: center;
     margin-top: 10px;
+    font-size: 20px;
 }
 
-.about-container h1{
-    padding-top: 30px;
-}
-
+/*
 .about-container p{
     padding: 0 120px 30px 120px;
-}
+}*/
 
 .random-container{
     background-color: #c0e5c4;
@@ -54,28 +59,26 @@ body{
     margin: 0 25px 15px 0;
 }
 
-.skills-container {
-  display: flex;
-  justify-content: center;
-  padding: 10px 0 10px 0;
+.row{
+    padding: 10px 0 10px 0;
 }
 
-.skills-container div {
-  width: 100%;
-  min-height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 5px;
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
 }
 
-.languages{
-    display: block;
-    background-color: #dbeeff;
+.column{
+    float: left;
+    width: 50%;
+    min-height: 400px;
+    text-align: center;
 }
 
-.experience{
-    background-color: aliceblue
+.column li{
+    font-size: 20px;
+    padding-right: 35px;
 }
 
 a{
@@ -92,19 +95,15 @@ nav ul{
     float: right;
 }
 
-nav li {
+nav li{
   color: #ffffff;
   display: inline;
   margin: 0;
   padding: 0 10px;
 }
 
-.languages li, .experience li{
-    font-size: 20px;
-}
-
-@media only screen and (max-width: 600px) {
-  [class*="col-"] {
+@media only screen and (max-width: 600px){
+    [class*="col-"] {
         width: 100%;
     }
 }
