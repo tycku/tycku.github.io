@@ -40,11 +40,6 @@ body{
     font-size: 20px;
 }
 
-/*
-.about-container p{
-    padding: 0 120px 30px 120px;
-}*/
-
 .random-container{
     background-color: #c0e5c4;
     width: 100%
@@ -67,9 +62,11 @@ body{
     content: "";
     display: table;
     clear: both;
+    width: 100%;
 }
 
 .column{
+    display: table-cell;
     float: left;
     width: 50%;
     height: 400px;
