@@ -56,9 +56,6 @@ body{
 
 .row{
     padding: 10px 0 10px 0;
-}
-
-.row:after{
     content: "";
     display: table;
     clear: both;
@@ -103,4 +100,7 @@ nav li{
     [class*="col-"] {
         width: 100%;
     }
-}
+    .col{
+      display: block;
+      width: 100%;
+   }
