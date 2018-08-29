@@ -8,14 +8,12 @@
     <link rel="icon" href="art.png">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="https://github.com/tycku">Github</a></li>
-            <li><a href="https://www.linkedin.com/in/tiffany-ku-29b495163/">LinkedIn</a></li>
-            <li>Tiffany.Y.Ku@Gmail.com</li>
-        </ul>
-    </nav>
+    <div id="navbar">
+        <a class="active" href="javascript:void(0)">About</a>
+        <a href="https://github.com/tycku" target="_blank">Github</a>
+        <a href="https://www.linkedin.com/in/tiffany-ku-29b495163/" target="_blank">LinkedIn</a>
+        <a href="">Tiffany.Y.Ku@Gmail.com</a>
+    </div>
     <img src="japan_photo1.jpg" alt="Japan" class="responsive">
     <div class=about-container>
         <h1 class="page-title">About Me</h1>
@@ -61,9 +59,25 @@
             <li>I love cooking</li>
             <li>My favorite game is Zelda</li>
             <li>I prefer completing work ahead of time</li>
-            <li>I am often on <a href="https://www.instagram.com/atracaries/">Instagram</a> browsing content</li>
+            <li>I am often on <a href="https://www.instagram.com/atracaries/" target="_blank">Instagram</a> browsing content</li>
             <li>I made the favicon based on my cat</li>
         </ul>
     </div>
+	
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+	
 </body>
 </html>
