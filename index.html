@@ -4,7 +4,7 @@
 	<title>Tiffany Ku | Front End Developer</title>
 	<meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href='/css/main.css' rel='stylesheet' type='text/css'>
+	    <link href='/css/main.css' rel='stylesheet' type='text/css'>
         <link rel="icon" href="art.png">
 </head>
 <body>
@@ -65,17 +65,24 @@
     </div>
 	
 <script>
-window.onscroll = function() {myFunction()};
+// window.onscroll = function() {myFunction()};
 
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
+// var navbar = document.getElementById("navbar");
+// var sticky = navbar.offsetTop;
 
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
+// function myFunction() {
+//   if (window.pageYOffset >= sticky) {
+//     navbar.classList.add("sticky")
+//   } else {
+//     navbar.classList.remove("sticky");
+//   }
+// }
+
+// SHORTENED WITH TERNARY
+
+window.onscroll = function(){
+    let navbar = document.getElementById("navbar");
+    window.pageYOffset >= navbar.offsetTop ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
 }
 </script>
 	
